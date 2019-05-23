@@ -1,0 +1,16 @@
+<!--Inquiry#received_email-->
+
+<!--<%= @greeting %>, find me in app/views/inquiry_mailer/received_email.text.erb-->
+
+===============================
+<%= @user.name %>様
+===============================
+
+この度は弊社イベントに参加の応募をいただき、誠にありがとうございます。
+<%= @user.name %>様のご登録情報は以下の通りです。
+
+【<%= @user.name %>様と同席される方】
+<%= @user.relationship%>
+
+【その他問合せ内容】
+<%= @user.content %>
